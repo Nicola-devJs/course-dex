@@ -1,0 +1,82 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+a {
+  margin-right: 20px;
+  color: cadetblue;
+  text-decoration: none;
+}
+
+form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+label {
+  font-weight: bold;
+  margin-top: 15px;
+}
+input {
+  max-width: 300px;
+  padding: 10px;
+  border: 1px solid green;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+fieldset {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.Link-Component {
+  display: flex;
+  flex-direction: column;
+  width: 96%;
+}
+.TopLInkContainer {
+  position: fixed;
+  width: 100%;
+  padding: 20px 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+  border: 1px solid green;
+  margin: 5px;
+}
+main {
+  width: 100%;
+  display: flex;
+  border: 1px solid blue;
+  margin: 5px;
+}
+section {
+  border: 1px solid red;
+  margin: 5px;
+}
+article {
+  border: 1px solid blueviolet;
+  margin: 5px;
+}
+nav {
+  margin: 5px;
+  border: 1px dashed brown;
+}
+aside {
+  width: 100%;
+  border: 1px solid orange;
+  margin: 5px;
+}
+footer {
+  width: 100%;
+  border: 1px solid greenyellow;
+  margin: 5px;
+}
