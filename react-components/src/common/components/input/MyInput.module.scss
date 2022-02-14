@@ -1,0 +1,53 @@
+@import '../../../assets/styles/var';
+
+.MyInput {
+   width: inherit;
+   height: max-content;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+
+   label {
+      margin-bottom: 8px;
+   }
+
+   span {
+      position: absolute;
+      left: 0;
+      bottom: -20px;
+      font-size: 12px;
+      color: $lightestRed;
+      display: none;
+   }
+
+   input {
+      min-height: $formItemsHeigth;
+      width: 100%;
+      background-color: $lightestGreyWhite;
+      border-radius: 4px;
+      padding: 8px 12px;
+      color: $darkGray;
+      display: block;
+      border: none;
+
+      transition: all 0.2s ease;
+      &:hover {
+         background-color: $lightestGrey;
+      }
+
+      &:focus {
+         box-shadow: 0px 0px 5px #d9d9d9;
+         outline: none;
+      }
+      &:disabled {
+         color: $lightestGrey;
+      }
+
+      &:invalid {
+         border: 1px solid $lightestRed;
+         & ~ span {
+            display: block;
+         }
+      }
+   }
+}
