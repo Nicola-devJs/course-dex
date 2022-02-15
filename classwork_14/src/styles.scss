@@ -1,0 +1,94 @@
+.App {
+   font-family: sans-serif;
+   text-align: center;
+}
+.Block {
+   height: 30px;
+   margin-bottom: 5px;
+}
+form {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   width: 400px;
+}
+
+label {
+   font-weight: bold;
+   margin-top: 15px;
+}
+input {
+   max-width: 300px;
+   padding: 10px;
+   border-radius: 5px;
+   margin: 5px;
+}
+
+fieldset {
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+}
+
+.inp {
+   &:checked ~ div {
+      border: 2px solid green;
+   }
+
+   &:checked ~ :nth-child(odd) {
+      border: 1px solid red;
+   }
+
+   &:checked ~ :nth-child(3) {
+      border: 3px solid black;
+   }
+
+   &:checked ~ :last-child {
+      border: 2px solid blue;
+   }
+}
+// -------
+
+input:optional {
+   border: 2px dotted orange;
+}
+
+input:required {
+   border: 2px solid darkred;
+}
+
+.E_mail {
+   &:invalid {
+      border: 3px solid red;
+   }
+
+   &:valid {
+      border: 3px solid darkgreen;
+   }
+}
+
+#auto_number {
+   &:invalid {
+      border: 3px solid black;
+   }
+
+   &:valid {
+      border: 3px solid darkgreen;
+   }
+}
+
+// -------------
+
+.custom-img {
+   height: 400px;
+   width: 500px;
+
+   background-image: url('./slp2.png'), url('./slp4.png'), url('./spl3.png'),
+      url('./smok.png'), url('./cow.png'), url('./cow.png'), url('./cow.png'),
+      url('./fon.jpg');
+   background-repeat: no-repeat;
+   background-position: 343px 105px, 250px 130px, 140px 155px, 160px 230px,
+      70px 160px, center 160px, 300px 160px, center;
+   background-size: auto, auto, auto, 30px, auto, auto, auto, cover;
+}

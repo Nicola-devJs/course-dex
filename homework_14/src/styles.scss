@@ -1,0 +1,61 @@
+.App {
+   font-family: sans-serif;
+   text-align: center;
+}
+
+.magic {
+   & ~ .div1 {
+      width: 0%;
+      transition: width 2s ease;
+      margin-bottom: 10px;
+   }
+   &:checked ~ .div1 {
+      width: 100%;
+      height: 20px;
+      background-color: green;
+   }
+
+   & ~ .div2 {
+      width: 0%;
+      transition: width 2s ease-in;
+      margin-bottom: 10px;
+   }
+   &:checked ~ .div2 {
+      width: 100%;
+      height: 20px;
+      background-color: red;
+   }
+
+   & ~ .div3 {
+      width: 0%;
+      transition: width 2s ease-out;
+      margin-bottom: 10px;
+   }
+   &:checked ~ .div3 {
+      width: 100%;
+      height: 20px;
+      background-color: blue;
+   }
+
+   & ~ .div4 {
+      width: 0%;
+      transition: width 2s ease-in-out;
+      margin-bottom: 10px;
+   }
+   &:checked ~ .div4 {
+      width: 100%;
+      height: 20px;
+      background-color: yellow;
+   }
+
+   & ~ .div5 {
+      width: 0%;
+      transition: width 2s linear;
+      margin-bottom: 10px;
+   }
+   &:checked ~ .div5 {
+      width: 100%;
+      height: 20px;
+      background-color: darkmagenta;
+   }
+}
