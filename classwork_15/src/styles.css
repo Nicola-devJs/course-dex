@@ -1,0 +1,12 @@
+.App {
+   font-family: sans-serif;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 25px;
+}
+.forms {
+   width: calc(1920px / 2);
+   display: flex;
+   justify-content: center;
+}
